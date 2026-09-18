@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "drawio": {
+      "command": "npx",
+      "args": ["-y", "@drawio/mcp"]
+    },
+    "miro": {
+      "type": "http",
+      "url": "https://mcp.miro.com/"
+    }
+  }
+}
