@@ -1,30 +1,121 @@
-<mxfile host="app.diagrams.net" modified="2026-09-17T00:00:00.000Z" agent="GitHub Copilot" version="24.7.17" type="device">
+<mxfile host="app.diagrams.net" agent="GitHub Copilot">
   <diagram id="architecture-overview" name="Architecture">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1084" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-
-        <mxCell id="client" value="Client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;spacing=12;" vertex="1" parent="1">
-          <mxGeometry x="80" y="180" width="160" height="80" as="geometry" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="ARISTO - Arquitectura actual de ARISCON" vertex="1">
+          <mxGeometry height="40" width="760" x="150" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="api-gateway" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontStyle=1;spacing=12;" vertex="1" parent="1">
-          <mxGeometry x="320" y="180" width="180" height="80" as="geometry" />
+        <mxCell id="alumno" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" value="Alumno" vertex="1">
+          <mxGeometry height="60" width="120" x="30" y="155" as="geometry" />
         </mxCell>
-        <mxCell id="customer-service" value="Customer Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=16;fontStyle=1;spacing=12;" vertex="1" parent="1">
-          <mxGeometry x="580" y="180" width="200" height="80" as="geometry" />
+        <mxCell id="padre" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" value="Padre / Apoderado" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="243" as="geometry" />
         </mxCell>
-        <mxCell id="postgresql" value="PostgreSQL" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;fontStyle=1;spacingTop=24;" vertex="1" parent="1">
-          <mxGeometry x="860" y="180" width="180" height="80" as="geometry" />
+        <mxCell id="docente" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" value="Docente" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="330" as="geometry" />
         </mxCell>
-
-        <mxCell id="client-to-gateway" value="calls" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=13;" edge="1" parent="1" source="client" target="api-gateway">
+        <mxCell id="admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" value="Administrativo" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="web" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" value="ARISCON Web&#xa;ASP.NET / IIS / .NET 4.6" vertex="1">
+          <mxGeometry height="90" width="180" x="225" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ios" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" value="ARISCON iOS&#xa;Swift" vertex="1">
+          <mxGeometry height="70" width="180" x="225" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="android" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" value="ARISCON Android" vertex="1">
+          <mxGeometry height="70" width="180" x="225" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="adminweb" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" value="Web Administrativa" vertex="1">
+          <mxGeometry height="70" width="180" x="225" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="reporting" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" value="Web Reporting" vertex="1">
+          <mxGeometry height="70" width="180" x="225" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;" value="API REST / JSON&#xa;.NET 4.6 / C#" vertex="1">
+          <mxGeometry height="95" width="190" x="470" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="db1" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" value="Base de datos Web" vertex="1">
+          <mxGeometry height="80" width="150" x="705" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="db2" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" value="Base de datos móvil" vertex="1">
+          <mxGeometry height="80" width="150" x="705" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="db3" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" value="Base de datos administrativa" vertex="1">
+          <mxGeometry height="80" width="150" x="705" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="db4" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" value="Base de datos reporting" vertex="1">
+          <mxGeometry height="80" width="150" x="705" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aws" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1;" value="AWS" vertex="1">
+          <mxGeometry height="70" width="140" x="1100" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="conta" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" value="PERUCONTA" vertex="1">
+          <mxGeometry height="60" width="140" x="1100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="hr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" value="HUMAN-FAST" vertex="1">
+          <mxGeometry height="60" width="140" x="1100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="inventario" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" value="RECORD-SYS" vertex="1">
+          <mxGeometry height="60" width="140" x="1100" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="board" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" value="VIRTUAL-BOARD" vertex="1">
+          <mxGeometry height="60" width="140" x="1100" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="u1" edge="1" parent="1" source="alumno" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="web" value="usa">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="gateway-to-service" value="calls" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=13;" edge="1" parent="1" source="api-gateway" target="customer-service">
+        <mxCell id="u2" edge="1" parent="1" source="padre" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="web" value="usa">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="service-to-database" value="connects to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=13;" edge="1" parent="1" source="customer-service" target="postgresql">
+        <mxCell id="u3" edge="1" parent="1" source="docente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="web" value="usa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u4" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="adminweb" value="administra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w1" edge="1" parent="1" source="web" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="api" value="consume">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w2" edge="1" parent="1" source="ios" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="api" value="consume">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w3" edge="1" parent="1" source="android" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="api" value="consume">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w4" edge="1" parent="1" source="adminweb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="api" value="consume">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5" edge="1" parent="1" source="reporting" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="api" value="reporta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="db1" value="escribe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="db2" value="sincroniza">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="db3" value="configura">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="db4" value="reporta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="conta" value="integra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext2" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="hr" value="integra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext3" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="inventario" value="integra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext4" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="board" value="integra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cloud" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="aws" value="ejecuta en">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
